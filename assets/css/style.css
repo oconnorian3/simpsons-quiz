@@ -46,6 +46,9 @@ button {
   border-color: rgba(0, 0, 0, 0.19);
 }
 
+.hide {
+  display: none;
+}
 
 @media (min-width: 768px) {
   button {

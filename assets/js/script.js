@@ -1,8 +1,11 @@
 const startButton = document.getElementById('start-btn')
-const questionContainerElement = document.getElementById ("question-container")
-const questionContainerElement = document.getElementById
+const questionContainerElement = document.getElementById ('question-container')
+const questionElement = document.getElementById ('question')
+const answerButtonsElement = document.getElementById ('answers-buttons')
 
-startButton.addEventListener("click", startGame)
+let shuffledQuestions, currentQuestionIndex
+
+startButton.addEventListener("click", startQuiz)
 
 function startQuiz () {
 console.log('Started')
@@ -17,17 +20,22 @@ function displayNextQuestion () {
   showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
-function selectAnswer () {
+function showQuestion (question) {
 
 }
 
+function selectAnswer () {
+  questionContainerElement.innerText = question.question
+}
+
 const questions = [
-    [
-        question : 'What was the year the first episode of The Simpsons aired?'
+    {
+        question: 'What was the year the first episode of The Simpsons aired?',
         answers: [
-            {test: 1989, correct : true}
-            {test: 1987, correct : false}
-            {test: 1988, correct : false}
-            {test: 1990, correct : false}
+            {test: 1989, correct : true},
+            {test: 1987, correct : false},
+            {test: 1988, correct : false},
+            {test: 1990, correct : false},
         ]
+    }
 ]

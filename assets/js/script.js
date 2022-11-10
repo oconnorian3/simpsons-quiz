@@ -1,17 +1,20 @@
 const startButton = document.getElementById('start-btn')
 const questionContainerElement = document.getElementById ("question-container")
+const questionContainerElement = document.getElementById
 
 startButton.addEventListener("click", startGame)
 
 function startQuiz () {
 console.log('Started')
 startButton.classList.add('hide')
+shuffledQuestions = questions.sort(() => Math.random() - .5)
+currentQuestionIndex = 0
 questionContainerElement.classList.remove('hide')
 displayNextQuestion
 }
 
 function displayNextQuestion () {
-
+  showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
 function selectAnswer () {

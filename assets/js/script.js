@@ -1,3 +1,6 @@
+/**
+ * Delcaring required Elements
+ */
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
@@ -6,12 +9,18 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 
 let shuffledQuestions, currentQuestionIndex
 
+/**
+ * Event listner that Starts game 
+ */
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
 })
 
+/**
+ * Displays Quiz, Loads question in reandowm order
+ */
 function startGame() {
   startButton.classList.add('hide')
   shuffledQuestions = questions.sort(() => Math.random() - .5)
@@ -20,6 +29,9 @@ function startGame() {
   setNextQuestion()
 }
 
+/**
+ * Sets next question
+ */
 function setNextQuestion() {
   resetState()
   showQuestion(shuffledQuestions[currentQuestionIndex])
@@ -38,7 +50,9 @@ function showQuestion(question) {
     answerButtonsElement.appendChild(button)
   })
 }
-
+/**
+ * Resets question after submitting next and disaplay's new one
+ */
 function resetState() {
   clearStatusClass(document.body)
   nextButton.classList.add('hide')
@@ -46,7 +60,9 @@ function resetState() {
     answerButtonsElement.removeChild(answerButtonsElement.firstChild)
   }
 }
-
+/**
+ * Allows user restart quiz after workin through all questions
+ */
 function selectAnswer(e) {
   const selectedButton = e.target
   const correct = selectedButton.dataset.correct
@@ -63,18 +79,31 @@ function selectAnswer(e) {
 }
 
 function setStatusClass(element, correct) {
-  clearStatusClass(element)
-  if (correct) {
-    element.classList.add('correct')
-  } else {
-    element.classList.add('wrong')
+    clearStatusClass(element)
+    if (correct) {
+      element.classList.add('correct')
+    } else {
+      element.classList.add('wrong')
+    }
   }
-}
+  
+  function clearStatusClass(element) {
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
+  }
 
-function clearStatusClass(element) {
-  element.classList.remove('correct')
-  element.classList.remove('wrong')
+  // CHECKS IF PLAYER CHOICE IS CORRECT
+function checkAnswer(e) {
+    const selectedAnswer = e.target;
+    const correctAnswer = selectedAnswer.dataset.correct;
+
+    Array.from(answersContainer.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct);
+    });
+
 }
+// Increments the corects score
+
 
 const questions = [
     {

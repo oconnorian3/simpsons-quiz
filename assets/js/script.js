@@ -104,6 +104,10 @@ function checkAnswer(e) {
 }
 // Increments the corects score
 
+function incrementCorrectAnswer () {
+    let addScoreCount = parseInt(document.getElementById("correct").innerText);
+    document.getElementById("correct").innerText = addScoreCount + 1;
+}
 
 const questions = [
     {

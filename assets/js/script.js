@@ -95,7 +95,7 @@ function setStatusClass(element, correct) {
   // CHECKS IF PLAYER CHOICE IS CORRECT
 function checkAnswer(e) {
     const selectedAnswer = e.target;
-    const correctAnswer = selectedAnswer.dataset.correct;
+    const correctScore = selectedAnswer.dataset.correct;
 
     Array.from(answersContainer.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
@@ -104,10 +104,14 @@ function checkAnswer(e) {
 }
 // Increments the corects score
 
-function incrementCorrectAnswer () {
-    let addScoreCount = parseInt(document.getElementById("correct").innerText);
-    document.getElementById("correct").innerText = addScoreCount + 1;
+const correctScore = document.getElementById("correct");
+let scoreCounter = 0;
+
+function incrementCorrectAnswer() {
+    scoreCounter += 1;
+    correctScore.innerText = scoreCounter;
 }
+
 
 const questions = [
     {

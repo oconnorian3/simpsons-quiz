@@ -82,6 +82,8 @@ function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
       element.classList.add('correct')
+  
+
     } else {
       element.classList.add('wrong')
     }
@@ -92,25 +94,7 @@ function setStatusClass(element, correct) {
     element.classList.remove('wrong')
   }
 
-  // CHECKS IF PLAYER CHOICE IS CORRECT
-function checkAnswer(e) {
-    const selectedAnswer = e.target;
-    const correctScore = selectedAnswer.dataset.correct;
-
-    Array.from(answersContainer.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct);
-    });
-
-}
 // Increments the corects score
-
-const correctScore = document.getElementById("correct");
-let scoreCounter = 0;
-
-function incrementCorrectAnswer() {
-    scoreCounter += 1;
-    correctScore.innerText = scoreCounter;
-}
 
 
 const questions = [

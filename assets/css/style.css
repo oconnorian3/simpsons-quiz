@@ -47,6 +47,11 @@ body {
   text-align: center;
 }
 
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
 button {
    background-color: white;
    border-color: rgba(0, 0, 0, 0.19);
@@ -74,8 +79,16 @@ display: none;
 
 /* Score Counter */
 
-#score-table {
+#wrong_answer_table {
   width: 100%;
+  font-size: 200%;
+  font-weight: bolder;
+}
+
+#right_answer_table {
+  width: 100%;
+  font-size: 200%;
+  font-weight: bolder;
 }
 
 #wrong_answers {

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+
 body {
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
@@ -5,18 +7,47 @@ body {
   background-size: 100% 100%;
 }
 
+.heading {
+  font-family: 'Rubik Distressed', cursive;
+  color: black;
+  margin-left: 5rem;
+  position: relative;
+  width: 100%;
+  font-size: 260%;
+  font-weight: 1200;
+}
+
 #Quizbutton {
-  margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+#takethequiz {
+  margin-left: 18rem;
+  background-color: white;
+  font-family: 'Rubik Distressed', cursive;
+  color: black;
+}
+
+.btn {
+  width: auto;
+  height: auto;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-family: 'Rubik Distressed', cursive;
+  color: black;
+  background-color: white;
+  padding-left: 5rem;
+}
 
 button {
-background-color: #ffffff;
-border-color: rgba(0, 0, 0, 0.19);
+   background-color: white;
+   border-color: rgba(0, 0, 0, 0.19);
+   font-family: 'Rubik Distressed', cursive;
+   color: black;
 }
 
 .hide {

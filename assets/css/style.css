@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
 
 body {
   background-image: url("../images/background.jpg");
@@ -40,7 +41,8 @@ body {
   font-family: 'Rubik Distressed', cursive;
   color: black;
   background-color: white;
-  padding-left: 5rem;
+  margin-left: 5rem;
+  text-align: center;
 }
 
 button {
@@ -60,4 +62,13 @@ button {
   min-width: 200px;
   padding: 14px 16px;
 }
+}
+
+#question {
+  font-family: 'Rubik Bubbles', cursive;
+  color: black;
+  font-size: 300%;
+  width: 100%;
+  margin-top: 15rem;
+  text-align: center;
 }

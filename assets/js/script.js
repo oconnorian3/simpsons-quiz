@@ -51,7 +51,7 @@
    })
  }
  /**
-  * Resets question after submitting next and disaplay's new one
+  * Resets question after submitting next and display's new one
   */
  function resetState() {
    nextButton.classList.add('hide')

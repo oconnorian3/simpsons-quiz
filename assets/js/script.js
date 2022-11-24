@@ -35,6 +35,7 @@
  function setNextQuestion() {
   resetState()
    showQuestion(shuffledQuestions[currentQuestionIndex])
+   startButton.classList.add('hidea')
  }
  
  function showQuestion(question) {
@@ -74,9 +75,3 @@
      startButton.classList.remove('hide')
    }
  }
- 
-
-   
-
- 
-

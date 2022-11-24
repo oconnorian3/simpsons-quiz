@@ -6,7 +6,7 @@
  const questionContainerElement = document.getElementById('question-container')
  const questionElement = document.getElementById('question')
  const answerButtonsElement = document.getElementById('answer-buttons')
- 
+
  let shuffledQuestions, currentQuestionIndex
  
  /**
@@ -35,7 +35,6 @@
  function setNextQuestion() {
   resetState()
    showQuestion(shuffledQuestions[currentQuestionIndex])
-   startButton.classList.add('hidea')
  }
  
  function showQuestion(question) {
@@ -75,3 +74,14 @@
      startButton.classList.remove('hide')
    }
  }
+
+ function incrementCorrectAnswer () {
+  let addScoreCount = parseInt(document.getElementById("right_answers").innerText);
+  document.getElementById("right_answers").innerText = addScoreCount + 1;
+}
+
+function incrementWrongAnswer () {
+  let wrongAnswerCount = parseInt(document.getElementById("wrong_answers").innerText);
+  document.getElementById("wrong_answers").innerText = wrongAnswerCount + 1;
+
+}

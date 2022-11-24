@@ -15,7 +15,7 @@ The Simpsons Quiz is a website with a short fun interactive quiz . Simpsons fans
 
     * The homepage prompts you with a clear "Start Quiz" button which encourages the user to begin the quiz.
     * On beginning the quiz the first question appears. Once you select your answer and the select the "Next" button you will move onto the next question. There is a total of ten question. 
-    * Once the quiz starts there is a "Return to Homepage" button on the top left of the page. This takes the user to the homepage where they can restart the quiz.
+    * Once the quiz starts the "Welcome to the Simpspns Quiz" button will allow the user to restart the quix
     * The navigational links clearly tell the user where to go on the site and allows the user to navigate quiet easily around the site.
 
     ![](assets/images/navigational-links.png)

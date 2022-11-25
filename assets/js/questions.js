@@ -125,4 +125,58 @@ const question1 = [
     "answer4": 'Kristina & Karissa',
     "correct": 'Patty & Selma'
   },
+
+  {
+    "question": 'How many kids do Apu and Manjula have',
+    "answer1": '6',
+    "answer2": '7',
+    "answer3": '8',
+    "answer4": '9',
+    "correct": '8'
+  },
+
+  {
+    "question": 'What is Marges maiden name?',
+    "answer1": 'Garnier',
+    "answer2": 'Fitzgerald',
+    "answer3": 'Never Revealed',
+    "answer4": 'Bouvier',
+    "correct": 'Bouvier'
+  },
+
+  {
+    "question": 'What is Homers full time job?',
+    "answer1": 'Duffman',
+    "answer2": 'Chief of Police',
+    "answer3": 'Nuclear Safety Inpector',
+    "answer4": 'Bus Driver',
+    "correct": 'Nuclear Safety Inpector'
+  },
+
+  {
+    "question": 'What is Marges natural hair colour?',
+    "answer1": 'Grey',
+    "answer2": 'Blue',
+    "answer3": 'Blonde',
+    "answer4": 'Brown',
+    "correct": 'Grey'
+  },
+
+  {
+    "question": 'Which cartoon was the inspiration for The Itchy & Scratchy Show?',
+    "answer1": 'Scooby Doo',
+    "answer2": 'Bugs Bunny',
+    "answer3": 'Tom & Jerry',
+    "answer4": 'Danger Mouse',
+    "correct": 'Tom & Jerry'
+  },
+
+  {
+    "question": 'Whats the name of the Simpsons pet dog?',
+    "answer1": 'Ruby',
+    "answer2": 'Ralph',
+    "answer3": 'Santas Little Helper',
+    "answer4": 'Snowy',
+    "correct": 'Santas Little Helper'
+  },
 ];

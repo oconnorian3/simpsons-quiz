@@ -2,7 +2,7 @@
  * Delcaring required Elements
  */
  const startButton = document.getElementById('start-btn');
- const nextButton = document.getElementById('next-btn');
+ //const nextButton = document.getElementById('next-btn');
  const questionContainerElement = document.getElementById('question-container');
  const questionElement = document.getElementById('question');
  const answerButtonsElement = document.getElementById('answer-buttons');
@@ -61,38 +61,34 @@ function checkAnswer(event) {
   setNextQuestion();
 }
 
+
  /**
-  * Resets question after submitting next and display's new one
+  * Resets question after submitting next and display's new one I commented this out. 
   */
- function resetState() {
-   nextButton.classList.add('hide')
-   while (answerButtonsElement.firstChild) {
-     answerButtonsElement.removeChild(answerButtonsElement.firstChild)
-   }
- }
+ //function resetState() {
+   //nextButton.classList.add('hide')
+   //while (answerButtonsElement.firstChild) {
+     //answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+   //}
+ //}
  /**
-  * Allows user restart quiz after workin through all questions
+  * Allows user restart quiz after workin through all questions I commnted this out
   */
- function selectAnswer(e) {
-   const selectedButton = e.target
+ //function selectAnswer(e) {
+  // const selectedButton = e.target
   //  const correct = selectedButton.dataset.correct
-   Array.from(answerButtonsElement.children).forEach(button => {
-   })
-   if (shuffledQuestions.length > currentQuestionIndex + 1) {
-     nextButton.classList.remove('hide')
-   } else {
-     startButton.innerText = 'Restart'
-     startButton.classList.remove('hide')
-   }
- }
+   //Array.from(answerButtonsElement.children).forEach(button => {
+   //})
+   //if (shuffledQuestions.length > currentQuestionIndex + 1) {
+     //nextButton.classList.remove('hide')
+   //} else {
+     //startButton.innerText = 'Restart'
+     //startButton.classList.remove('hide')
+   //}
+ //}
 
  function incrementCorrectAnswer () {
   let addScoreCount = parseInt(document.getElementById("right_answers").innerText);
   document.getElementById("right_answers").innerText = addScoreCount + 1;
 }
 
-//function incrementWrongAnswer () {
-  //let wrongAnswerCount = parseInt(document.getElementById("wrong_answers").innerText);
-  //document.getElementById("wrong_answers").innerText = wrongAnswerCount + 1;
-
-//}

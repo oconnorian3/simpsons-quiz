@@ -15,7 +15,7 @@ body {
   margin-left: 5rem;
   position: relative;
   text-align: left;
-  font-size:3vw;
+  font-size:3.5vw;
 }
 
 #Quizbutton {
@@ -68,7 +68,7 @@ display: none;
 #question {
   font-family: 'Rubik Bubbles', cursive;
   color: black;
-  font-size: 3vw;
+  font-size: 3.5vw;
   width: 100%;
   margin-top: 12.5rem;
   text-align: center;

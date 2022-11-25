@@ -91,3 +91,38 @@ const questions = [
       ]
       },      
 ]
+
+const question1 = [
+  {
+    "question": 'What was the year the first episode of The Simpsons aired?',
+    "answer1": '1989',
+    "answer2": '1987',
+    "answer3": '1990',
+    "answer4": '1986',
+    "correct": '1989'
+  },
+  {
+    "question": 'Homer was part of a barbershop quartet. what was it called?',
+    "answer1": 'The Be Sharps',
+    "answer2": 'The Ce sharps',
+    "answer3": 'The De sharps',
+    "answer4": 'The Ee sharps',
+    "correct": 'The Be Sharps'
+  },
+  {
+    "question": 'Who performed the role of Sideshow Bob in "The Simpsons" and was a former "Cheers" star?',
+    "answer1": 'Ted Danson',
+    "answer2": 'Kelsey Grammar',
+    "answer3": 'Woody Harreison',
+    "answer4": 'George Wendt',
+    "correct": 'Kelsey Grammar'
+  },
+  {
+    "question": 'What are Marges twin sisters called?',
+    "answer1": 'Maggie & Sheila',
+    "answer2": 'Tia & Tamera',
+    "answer3": 'Patty & Selma',
+    "answer4": 'Kristina & Karissa',
+    "correct": 'Patty & Selma'
+  },
+];

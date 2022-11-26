@@ -14,11 +14,11 @@ The Simpsons Quiz is a website with a short fun interactive quiz . Simpsons fans
  * Navigation
 
     * The homepage prompts you with a clear "Start Quiz" button which encourages the user to begin the quiz.
-    * On beginning the quiz the first question appears. Once you select your answer and the select the "Next" button you will move onto the next question. There is a total of ten question. 
-    * Once the quiz starts the "Welcome to the Simpspns Quiz" button will allow the user to restart the quix
-    * The navigational links clearly tell the user where to go on the site and allows the user to navigate quiet easily around the site.
+    * On beginning the quiz the first question appears. Once you select your answer ypu will automatically be prompted with the next question There is a total of ten questions. 
+    * Once the quiz starts the "Welcome to the Simpspns Quiz" button will allow the user to restart the quiz
+   
 
-    ![](assets/images/navigational-links.png)
+    ![](assets/images/header-and-start-page.png)
 
  * Questions
 
@@ -26,18 +26,14 @@ The Simpsons Quiz is a website with a short fun interactive quiz . Simpsons fans
     * The quiz is multiple choice and each questions has 4 possible answers to choose from.
     * The questions appear in a different order each time the user takles the quiz.
     
-    ![](assets/images/screenshotofheader.png)
+    ![](assets/images/questions.png)
 
  * Score counter
 
-    * There is a score counter on the bottom of the page once the quiz starts to keep count of how many correct/incorrect answers the user gives. 
-    * Correct answers are highlighted in green and incorrect scores are highlighted in red.    
+    * There is a score counter on the bottom of the page once the quiz starts to keep count of how many correct answers the user gives. 
+    * Correct answers are highlighted in green.   
 
-    ![](assets/images/screenshot-of-about-us-section.png)
-
- * Headers/Footers
-
-    * The site does not have standard headers and footers displayed throughout like most sites as thi site is just a quiz.
+    ![](assets/images/correct-answers.png)
 
 # Testing #
 
@@ -54,13 +50,13 @@ The Simpsons Quiz is a website with a short fun interactive quiz . Simpsons fans
 
    * The site is responsive and reacts well to different screen sizes.
    * I confirmed that the navigational links work, are easy to understand and all content text is readable.
-   * I confirmed the form does work, each box must be filled otherwise the form will not submit. Also the email field must show a valid email or the form will not send.
+   * I confirmed that the questions do load and that the score counter does indeed keep track of all correct scores.
 
 **Bugs** 
 
 *Solved Problems*
 
-   * The background in the about us section caused the about us header to become unreadable. Creating a darker backgrouynd solved this
+   * The main background caused the tezt to become unreadable. Creating a darker backgrouynd solved this and brighter text solved this.
    * On a smaller screen a bit white space formed between the about us section and the main video banner. This was becasue I had a height define for the video and removing this fixed it. 
    * The text in the about us section lost its bullet points on smaller screens. Converting a pixel margin setting to em solved this.
 

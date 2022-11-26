@@ -2,7 +2,7 @@
 
 The Simpsons Quiz is a website with a short fun interactive quiz . Simpsons fans can test their knowledge with this fun short interactive quiz.
 
-![](assets/images/amiresponsive.png
+![](assets/images/amiresponsive.png)
 
 ## UX/UI ##
 

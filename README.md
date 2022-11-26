@@ -6,7 +6,7 @@ The Simpsons Quiz is a website with a short fun interactive quiz . Simpsons fans
 
 ## UX/UI ##
 
-   * A colourful cartoon background was chosen which displays all memebers of the Simpsons family. This background gives the site user a clear idea what the theme of the site is about.
+   * A colourful cartoon background was chosen which displays all members of the Simpsons family. This background gives the site user a clear idea what the theme of the quiz is about.
    * The website has very clear navigational to allow the user easily start the quiz.
    * There is a fun favicon added of Homer Simpsons Head.
 
@@ -15,8 +15,8 @@ The Simpsons Quiz is a website with a short fun interactive quiz . Simpsons fans
  * Navigation
 
     * The homepage prompts you with a clear "Start Quiz" button which encourages the user to begin the quiz.
-    * On beginning the quiz the first question appears. Once you select your answer ypu will automatically be prompted with the next question. There is a total of ten questions. 
-    * Once the first question loads a restart button appears which allows the user restart the quiz at anytime and resets the score back to zero. Clicking on the header also allows the user to restart the quiz. 
+    * On beginning the quiz the first question appears. Once you select your answer you will automatically be prompted with the next question. There is a total of ten questions. 
+    * Once the first question loads a restart button appears which allows the user restart the quiz at anytime and resets the score back to zero. Clicking on the header also allows the user to restart the quiz aswell. 
    
 
     ![](assets/images/header-and-start-page.png)
@@ -57,14 +57,13 @@ The Simpsons Quiz is a website with a short fun interactive quiz . Simpsons fans
 
 *Solved Problems*
 
-   * The main background caused the tezt to become unreadable. Creating a darker backgrouynd solved this and brighter text solved this.
-   * On a smaller screen a bit white space formed between the about us section and the main video banner. This was becasue I had a height define for the video and removing this fixed it. 
-   * The text in the about us section lost its bullet points on smaller screens. Converting a pixel margin setting to em solved this.
+   * The main background caused the text to become unreadable. Creating a darker background solved this aswell as adding brighter text.
+   * Trying to get the score counter working correctly was a struggle but got there in the end with assitance from my mentor.
 
 **Validator Testing**
 
 * HTML
-   * No errors were retuned when passing through the official W3C validator
+   * No errors were returned when passing through the official W3C validator
 
 ```
 https://validator.w3.org/nu/?doc=https%3A%2F%2Foconnorian3.github.io%2Fsimpsons-quiz%2F
@@ -79,11 +78,11 @@ https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Foconnorian3.gith
 ```
 
 * JS
-  * All JS was run through https://jshint.com/ with no errors detected. One warning was referenced in realtion to a decimal point been used on line 19 but I could not ffind a woraround.
+  * All JS was run through https://jshint.com/ with no errors detected. One warning was referenced in realtion to a decimal point been used on line 19 but I could not find a workaround.
   * No JS errors reported when running my quiz with dev tools opened.
     
 * Accessibility
-   * The colours and fonts are easy to read by passing it through the lighthouse in dev tools.
+   * The colours and fonts are easy to read and the site scored well in lighthouse dev tools.
 
    ![](/assets/images/lighthouseresults.png)
 ```

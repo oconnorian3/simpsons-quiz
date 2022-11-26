@@ -2,7 +2,6 @@
  * Delcaring required Elements
  */
  const startButton = document.getElementById('start-btn');
- //const nextButton = document.getElementById('next-btn');
  const questionContainerElement = document.getElementById('question-container');
  const questionElement = document.getElementById('question');
  const answerButtonsElement = document.getElementById('answer-buttons');
@@ -14,14 +13,7 @@
   * Event listner that Starts game 
   */
  startButton.addEventListener('click', startGame);
-//  nextButton.addEventListener('click', () => {
-//    currentQuestionIndex++
-//    setNextQuestion()
-//  })
- 
- /**
-  * Displays Quiz, Loads question in reandowm order
-  */
+
  function startGame() {
    startButton.classList.add('hide')
    shuffledQuestions = question1.sort(() => Math.random() - .5)
@@ -34,7 +26,6 @@
   * Sets next question
   */
  function setNextQuestion() {
-  // resetState()
    showQuestion(shuffledQuestions[currentQuestionIndex])
  }
 
@@ -60,32 +51,6 @@ function checkAnswer(event) {
   currentQuestionIndex++;
   setNextQuestion();
 }
-
-
- /**
-  * Resets question after submitting next and display's new one I commented this out. 
-  */
- //function resetState() {
-   //nextButton.classList.add('hide')
-   //while (answerButtonsElement.firstChild) {
-     //answerButtonsElement.removeChild(answerButtonsElement.firstChild)
-   //}
- //}
- /**
-  * Allows user restart quiz after workin through all questions I commnted this out
-  */
- //function selectAnswer(e) {
-  // const selectedButton = e.target
-  //  const correct = selectedButton.dataset.correct
-   //Array.from(answerButtonsElement.children).forEach(button => {
-   //})
-   //if (shuffledQuestions.length > currentQuestionIndex + 1) {
-     //nextButton.classList.remove('hide')
-   //} else {
-     //startButton.innerText = 'Restart'
-     //startButton.classList.remove('hide')
-   //}
- //}
 
  function incrementCorrectAnswer () {
   let addScoreCount = parseInt(document.getElementById("right_answers").innerText);

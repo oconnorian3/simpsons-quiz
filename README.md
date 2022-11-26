@@ -1,21 +1,22 @@
 # The Simpsons Quiz #
 
-The Simpsons Quiz is a website with a short fun interactive quiz . Simpsons fans can test their knowledge with this fun short interactive quiz.
+The Simpsons Quiz is a website with a short fun interactive quiz . Simpsons fans can test their knowledge with this short interactive quiz.
 
 ![](assets/images/amiresponsive.png)
 
 ## UX/UI ##
 
    * A colourful cartoon background was chosen which displays all memebers of the Simpsons family. This background gives the site user a clear idea what the theme of the site is about.
-   * The website has very clear navigational to alow cthe user easily start the quiz.
+   * The website has very clear navigational to allow the user easily start the quiz.
+   * There is a fun favicon added of Homer Simpsons Head.
 
 ## Features ##
 
  * Navigation
 
     * The homepage prompts you with a clear "Start Quiz" button which encourages the user to begin the quiz.
-    * On beginning the quiz the first question appears. Once you select your answer ypu will automatically be prompted with the next question There is a total of ten questions. 
-    * Once the quiz starts the "Welcome to the Simpspns Quiz" button will allow the user to restart the quiz
+    * On beginning the quiz the first question appears. Once you select your answer ypu will automatically be prompted with the next question. There is a total of ten questions. 
+    * Once the first question loads a restart button appears which allows the user restart the quiz at anytime and resets the score back to zero. Clicking on the header also allows the user to restart the quiz. 
    
 
     ![](assets/images/header-and-start-page.png)
@@ -98,8 +99,10 @@ https://pagespeed.web.dev/report?url=https%3A%2F%2Foconnorian3.github.io%2Fsimps
 # Credits #
 
 **Content** 
-   * The main code for the social media links was taken from the I love running project.
+   * I watched this video for some guidance and ideas on how to begin my quiz https://www.youtube.com/watch?v=riDzcEQbX6k
+   * I copied some questions from https://www.radiotimes.com/tv/comedy/pub-quiz-the-simpsons/ and https://thoughtcatalog.com/january-nelson/2021/09/simpsons-trivia/ to add to my quiz.
 
 **Media**
 
-   * The video and all images was taken from pexels.com
+   * The background was found on https://www.wallpaperflare.com 
+   * The favicon image was found on pexels.com

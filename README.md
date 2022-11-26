@@ -79,8 +79,10 @@ https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Foconnorian3.gith
     
 * Accessibility
    * The colours and fonts are easy to read by passing it through the lighthouse in dev tools.
+```
+https://pagespeed.web.dev/report?url=https%3A%2F%2Foconnorian3.github.io%2Fsimpsons-quiz%2F&form_factor=mobile
 
-![](assets/images/Lighouthouse-score.png)     
+```    
 
 # Deployment #
 
@@ -89,7 +91,7 @@ https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Foconnorian3.gith
    * From the source section drop-down menu, select the Master Branch
    * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-   * The live link can be found here - https://oconnorian3.github.io/allthingsspace
+   * The live link can be found here - https://oconnorian3.github.io/simpsons-quiz/
 
 # Credits #
 

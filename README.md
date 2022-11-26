@@ -41,10 +41,10 @@ The Simpsons Quiz is a website with a short fun interactive quiz . Simpsons fans
    * This site works in different browsers, Chrome , Safari & Firefox
 
    **Firefox**
-![](assets/images/screenshotofheader.png)
+![](assets/images/firefox.png)
 
    **Chrome**
-![](assets/images/chromeimage.png)
+![](assets/images/chrome.png)
 
    **Safari**
 ![](assets/images/safari.png)
@@ -77,6 +77,10 @@ https://validator.w3.org/nu/?doc=https%3A%2F%2Foconnorian3.github.io%2Fsimpsons-
 ```
 https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Foconnorian3.github.io%2Fsimpsons-quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
 ```
+
+* JS
+  * All JS was run through https://jshint.com/ with no errors detected. One warning was referenced in realtion to a decimal point been used on line 19 but I could not ffind a woraround.
+  * No JS errors reported when running my quiz with dev tools opened.
     
 * Accessibility
    * The colours and fonts are easy to read by passing it through the lighthouse in dev tools.

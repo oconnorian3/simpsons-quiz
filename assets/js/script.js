@@ -5,7 +5,6 @@
  const questionContainerElement = document.getElementById('question-container');
  const questionElement = document.getElementById('question');
  const answerButtonsElement = document.getElementById('answer-buttons');
- const startGameAgainBtn = document.getElementById('startGameAgain');
  const restart = document.getElementById('restart');
  let shuffledQuestions, currentQuestionIndex;
  let score = 0;
@@ -16,25 +15,25 @@
  startButton.addEventListener('click', startGame);
 
  function startGame() {
-   startButton.classList.add('hide')
-   shuffledQuestions = question1.sort(() => Math.random() - .5)
-   currentQuestionIndex = 0
+   startButton.classList.add('hide');
+   shuffledQuestions = question1.sort(() => Math.random() - .5);
+   currentQuestionIndex = 0;
    score = 0;
-   document.getElementById("right_answers").innerText = addScoreCount = 0;
-   questionContainerElement.classList.remove('hide')
-   restart.classList.remove('hide')
-   setNextQuestion()
+   document.getElementById("right_answers").innerText = 0;
+   questionContainerElement.classList.remove('hide');
+   restart.classList.remove('hide');
+   setNextQuestion();
  }
  
  /**
   * Sets next question
   */
  function setNextQuestion() {
-   showQuestion(shuffledQuestions[currentQuestionIndex])
+   showQuestion(shuffledQuestions[currentQuestionIndex]);
  }
 
 function showQuestion(question) {
-  questionElement.innerText = question.question
+  questionElement.innerText = question.question;
   let buttons = answerButtonsElement.getElementsByTagName('button');
     buttons[0].innerHTML = question.answer1;
     buttons[1].innerHTML = question.answer2;
@@ -59,13 +58,4 @@ function checkAnswer(event) {
  function incrementCorrectAnswer () {
   let addScoreCount = parseInt(document.getElementById("right_answers").innerText);
   document.getElementById("right_answers").innerText = addScoreCount + 1;
-}
-
-startGameAgainBtn.addEventListener('click', startGameAgain);
-/**
- * Start game from End Game section
- */
-function startGameAgain() {
-    endArea.style.display = "none";
-    startGame();
 }

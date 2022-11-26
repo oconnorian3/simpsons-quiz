@@ -45,6 +45,10 @@ function showQuestion(question) {
     buttons[3].setAttribute("data-answer", question.answer4);
 }
 
+/**
+  * Checks if correct Answer is selected and increments score if so
+  */
+
 function checkAnswer(event) {
   answer = event.dataset.answer;
   if (answer == shuffledQuestions[currentQuestionIndex].correct) {

@@ -2,7 +2,7 @@
 
 The Simpsons Quiz is a website with a short fun interactive quiz . Simpsons fans can test their knowledge with this fun short interactive quiz.
 
-![](assets/images/amiresponsivescreenshot.png)
+![](assets/images/amiresponsive.png
 
 ## UX/UI ##
 
@@ -79,6 +79,8 @@ https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Foconnorian3.gith
     
 * Accessibility
    * The colours and fonts are easy to read by passing it through the lighthouse in dev tools.
+
+   ![](/assets/images/lighthouseresults.png)
 ```
 https://pagespeed.web.dev/report?url=https%3A%2F%2Foconnorian3.github.io%2Fsimpsons-quiz%2F&form_factor=mobile
 

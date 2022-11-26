@@ -5,6 +5,7 @@
  const questionContainerElement = document.getElementById('question-container');
  const questionElement = document.getElementById('question');
  const answerButtonsElement = document.getElementById('answer-buttons');
+ const startGameAgainBtn = document.getElementById('startGameAgain');
 
  let shuffledQuestions, currentQuestionIndex;
  let score = 0;
@@ -18,6 +19,8 @@
    startButton.classList.add('hide')
    shuffledQuestions = question1.sort(() => Math.random() - .5)
    currentQuestionIndex = 0
+   score = 0;
+   document.getElementById("right_answers").innerText = addScoreCount = 0;
    questionContainerElement.classList.remove('hide')
    setNextQuestion()
  }
@@ -57,3 +60,11 @@ function checkAnswer(event) {
   document.getElementById("right_answers").innerText = addScoreCount + 1;
 }
 
+startGameAgainBtn.addEventListener('click', startGameAgain);
+/**
+ * Start game from End Game section
+ */
+function startGameAgain() {
+    endArea.style.display = "none";
+    startGame();
+}

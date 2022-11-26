@@ -6,7 +6,7 @@
  const questionElement = document.getElementById('question');
  const answerButtonsElement = document.getElementById('answer-buttons');
  const startGameAgainBtn = document.getElementById('startGameAgain');
-
+ const restart = document.getElementById('restart');
  let shuffledQuestions, currentQuestionIndex;
  let score = 0;
  
@@ -22,6 +22,7 @@
    score = 0;
    document.getElementById("right_answers").innerText = addScoreCount = 0;
    questionContainerElement.classList.remove('hide')
+   restart.classList.remove('hide')
    setNextQuestion()
  }
  

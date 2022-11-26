@@ -22,6 +22,8 @@
         </a>
     </header>
 
+    <!-- questions -->
+
     <div class="container">
         <div id="question-container" class="hide">
             <div id="question">Question</div>
@@ -32,16 +34,19 @@
                 <button class="btn" id="4" data-answer="" onclick="checkAnswer(this)">Answer 4</button>
             </div>
         </div>
+
+    <!-- start quiz button -->
         <div class="controls">
             <button id="start-btn" class="start-btn btn">Start the Quiz</button>
         </div>
 
+    <!-- score counter -->
         <div id="score-table">
             <p id="right_answer_table">Correct Answers:<span id="right_answers">0</span></p>
         </div>
-
-        <div>
-            <button class="end-btn" onclick="startGame()">Play again</button>
+    <!-- restart quiz button -->
+        <div id="restart" class="hide">
+            <button class="btn" onclick="startGame()">Restart Quiz</button>
         </div>
 
     </div>

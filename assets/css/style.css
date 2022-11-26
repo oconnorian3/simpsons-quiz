@@ -12,10 +12,9 @@ body {
 .heading {
   font-family: 'Rubik Distressed', cursive;
   color: white;
-  margin-left: 5rem;
-  position: relative;
   text-align: center;
   font-size:3.5vw;
+  width: 100%;
 }
 
 a {

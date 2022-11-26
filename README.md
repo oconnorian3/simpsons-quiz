@@ -20,12 +20,13 @@ The Simpsons Quiz is a website with a short fun interactive quiz . Simpsons fans
    
 
     ![](assets/images/header-and-start-page.png)
+    ![](assets/images/restart.png)
 
  * Questions
 
     * The quiz asks 10 questions in total.
     * The quiz is multiple choice and each questions has 4 possible answers to choose from.
-    * The questions appear in a different order each time the user takles the quiz.
+    * The questions appear in a different order each time the user takes the quiz.
     
     ![](assets/images/questions.png)
 

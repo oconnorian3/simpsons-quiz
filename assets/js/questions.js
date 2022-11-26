@@ -8,7 +8,7 @@ const question1 = [
     "correct": '1989'
   },
   {
-    "question": 'Homer was part of a barbershop quartet. what was it called?',
+    "question": 'Homer was part of a barbershop quartet. What was it called?',
     "answer1": 'The Be Sharps',
     "answer2": 'The Ce sharps',
     "answer3": 'The De sharps',
